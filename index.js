@@ -19,7 +19,6 @@ form.addEventListener("submit",e=>{
 async function beginSearch(term){
     const searchResult = await fetch(`${apiURL}/suggest/${term}`);
     const data = await searchResult.json();
-    //console.log(data);
     displayData(data);
 }
 
@@ -46,7 +45,6 @@ function displayData(data){
 
 result.addEventListener("click", e=>{
     const clickedElement = e.target;
-
     if(clickedElement.tagName === 'SPAN'){
         const artist= clickedElement.getAttribute('data-artist');
         const songTitle= clickedElement.getAttribute('data-songtitle');
