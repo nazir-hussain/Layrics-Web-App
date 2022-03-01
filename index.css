@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: ui-sans-serif; 
+    background: url("https://images.pexels.com/photos/92083/pexels-photo-92083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+body::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background: rgb(5, 23, 29, 0.6);
+    background-attachment: fixed;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    max-width: 330px px;
+    justify-content: space-between;
+    align-content: center;
+    margin: 30px;
+    padding: 0 20px;
+}
+
+header .container{
+    padding: 1rem;
+    text-align: center;
+    background-image : url("https://images.unsplash.com/photo-1597271116561-ba0ff83c855b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"),
+    url("https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    border-radius: 0.7rem;
+    box-shadow : 2px 3px 20px black;
+    border-left : 4px solid white;
+    border-bottom : 4px solid white;
+    margin-bottom: 0rem;
+    opacity: 0.87;
+    background-position: contain;
+    backdrop-filter: 15px;
+    margin-top: 1rem;
+    background-blend-mode: overlay;
+}
+
+header h1{
+    font-size: 3rem;
+    color: white;
+    /* padding-bottom: 1rem; */
+}
+
+form input, form button{
+    /* outline: double; */
+    padding: 16px;
+    border: 2px solid rgb(7, 18, 22,111);
+    border-radius: 3rem;
+    font-size: 1rem ;
+}
+
+form input{
+    margin-right: 10px;
+}
+
+form button{
+    background: linear-gradient(orange,crimson) ;
+    color: white;
+    cursor: pointer;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+form button:hover, .songs li span:hover{
+    box-shadow: 0 0 10px rgb(231, 209, 109), 0 0 15px , 0 0 20px white;
+    border: 2px solid rgb(4, 80, 110);
+}
+
+section .container{
+    display: block;
+    color: rgb(3 2 5);
+    margin-right: 0 auto;
+    text-align: center;
+    padding: auto;
+}
+
+.songs{
+    width: 80%;
+    list-style: none;
+    margin:0 auto;
+    padding: 2rem 0;
+}
+
+.songs li{
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px dashed ;
+    flex-direction: column;
+}
+
+.songs li span{
+    font-size: 1.4rem;
+    background-color: rgb(95, 165, 192);
+    padding: 5px;
+    margin: 5px;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Nazir Hussain */
