@@ -58,7 +58,6 @@ header .container{
 header h1{
     font-size: 3rem;
     color: white;
-    /* padding-bottom: 1rem; */
 }
 
 form input, form button{
